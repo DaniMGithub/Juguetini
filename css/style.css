@@ -1,0 +1,157 @@
+/*media queris*/
+@media screen and (max-width: 768px) {
+  /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 768px o menos */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 769px o más, y de 1024px o menos */
+}
+
+@media screen and (min-width: 1025px) {
+  /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 1025px o más */
+}
+
+/* Estilos generales */
+
+body {
+  background-color: #d5dff5;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+  background-color: #d3def0;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+  color: #66c3ff;
+}
+
+/* Estilos para la sección principal */
+
+section:first-of-type {
+  background-color: #a0a5ad;
+  padding: 100px 0;
+}
+
+section:first-of-type h1, section:first-of-type p {
+  text-align: center;
+}
+
+section:first-of-type h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+section:first-of-type p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+section:first-of-type .btn-primary {
+  background-color: #66c3ff;
+  border-color: #66c3ff;
+  font-weight: bold;
+}
+
+section:first-of-type .btn-primary:hover {
+  background-color: #fff;
+  color: #0f1b2d;
+}
+
+/* Estilos para la sección de productos */
+
+section:nth-of-type(2) {
+  background-color: #0f1b2d;
+  padding: 100px 0;
+}
+
+section:nth-of-type(2) h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-outline-primary {
+  color: #66c3ff;
+  border-color: #66c3ff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #66c3ff;
+  color: #fff;
+}
+
+/* Estilos para mobile */
+
+@media screen and (max-width: 767px) {
+
+  section:first-of-type h1 {
+      font-size: 36px;
+  }
+
+  section:first-of-type p {
+      font-size: 16px;
+  }
+
+  section:nth-of-type(2) h2 {
+      font-size: 30px;
+  }
+
+  .card-title {
+      font-size: 20px;
+  }
+
+  .card-text {
+      font-size: 16px;
+  }
+
+}
+
+/* Estilos para tablet */
+
+@media screen and (min-width: 768px) and (max-width:
