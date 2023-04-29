@@ -1,5 +1,5 @@
 
-const baseDeDatos = [
+const productosArray = [
     {
         id: 1,
         nombre: 'Patata',
