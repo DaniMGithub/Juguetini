@@ -339,13 +339,12 @@ p {
 
 
 .formulario{
-	height: 100%; 
 	font-family: 'Noto Sans', sans-serif;
   background-color: #ab4493; 
 }
 
 
-.contact_form{	
+.formulario{	
 	width: 460px; 
   height: auto;
   margin: 80px auto;
