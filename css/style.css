@@ -33,6 +33,11 @@ margin-left: 7em;
 
 .navbar {
   background-color: #d3def0;
+  display: flex;
+  margin-left: 3em; 
+  margin-right: 3em; 
+  padding-left: 30em;
+  justify-content: center;
 }
 
 .navbar-brand, .navbar-nav .nav-link {
@@ -265,7 +270,7 @@ p {
 
 .ventana-carrito {
   position: relative;
-  background-color: rgb(168, 59, 59);
+  background-color: rgb(252, 250, 249);
   min-width: 500px;
   padding: 20px;
   margin-top: -100%;
@@ -459,4 +464,10 @@ p .formulario p{
 .formulario textarea:focus{
 	outline:0;
 	border: 1px solid #97d848;
+}
+
+
+.foot{
+  display: flex;
+   justify-content: center;
 }
