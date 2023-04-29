@@ -1,28 +1,53 @@
-
-const productosArray = [
+[
     {
-        id: 1,
-        nombre: 'Patata',
-        precio: 1,
-        imagen: 'https://media.vogue.es/photos/602124e712f00571fcffab01/master/w_2732,h_4098,c_limit/00040-Balenciaga-Fall-21.jpg'
+      "id": 1,
+      "nombre": "Juguete 1",
+      "tipo": "juguete",
+      "cantidad": 1,
+      "desc": "Un juguete re divertido",
+      "precio": 1200,
+      "edad": "Todos",
+      "img": "./img/juguete1.jpg"
     },
     {
-        id: 2,
-        nombre: 'Cebolla',
-        precio: 1.2,
-        imagen: 'https://st.depositphotos.com/1013193/4394/i/450/depositphotos_43944869-stock-photo-woman-in-a-silver-suit.jpg'
+      "id": 2,
+      "nombre": "Juguete 2",
+      "tipo": "juguete",
+      "cantidad": 1,
+      "desc": "Un juguete re divertido",
+      "precio": 1100,
+      "edad": "Para mayores de 1 año",
+      "img": "./img/juguete2.jpg"
     },
     {
-        id: 3,
-        nombre: 'Calabacin',
-        precio: 2.1,
-        imagen: 'https://thumbs.dreamstime.com/b/muchacha-en-ropa-futurista-72619058.jpg'
+      "id": 3,
+      "nombre": "Juguete 3",
+      "tipo": "juguete",
+      "cantidad": 1,
+      "desc": "Un juguete re divertido",
+      "precio": 1200,
+      "edad": "Para mayores de 2 años",
+      "img": "./img/juguete6.jpg"
     },
     {
-        id: 4,
-        nombre: 'Fresas',
-        precio: 0.6,
-        imagen: 'fhttps://previews.123rf.com/images/paffy/paffy1606/paffy160600053/58945645-mujer-joven-futurista-en-la-ropa-de-pie-apoyado-en-la-pared-de-plata-estilo-de-la-ciencia-ficci%C3%B3n.jpg'
+      "id": 4,
+      "nombre": "Juguete 4",
+      "tipo": "juguete",
+      "cantidad": 1,
+      "desc": "Un juguete re divertido",
+      "precio": 1400,
+      "edad": "Para mayores de 3 meses",
+      "img": "./img/juguete4.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Juguete 5",
+      "tipo": "juguete",
+      "cantidad": 1,
+      "desc": "Un juguete re divertido",
+      "precio": 1200,
+      "edad": "Todos",
+      "img": "./img/juguete5.jpg"
     }
-
-];
+  ]
+  

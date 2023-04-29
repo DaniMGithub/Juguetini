@@ -21,8 +21,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+  align-self: center;
+  
 }
 
+h2{
+align-self: center;
+margin-left: 7em;
+}
 /* Estilos para la barra de navegación */
 
 .navbar {
@@ -30,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-brand, .navbar-nav .nav-link {
-  color: #fff;
+  color: #6c2799;
   font-weight: bold;
 }
 
@@ -41,8 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Estilos para la sección principal */
 
 section:first-of-type {
-  background-color: #a0a5ad;
-  padding: 100px 0;
+  background-color: #a0a5ad;  
 }
 
 section:first-of-type h1, section:first-of-type p {
@@ -84,7 +89,7 @@ section:nth-of-type(2) h2 {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #97e7f1;
   border-radius: 10px;
   border: none;
   overflow: hidden;
@@ -139,7 +144,7 @@ section:nth-of-type(2) h2 {
   }
 
   section:nth-of-type(2) h2 {
-      font-size: 30px;
+      font-size: 20px;
   }
 
   .card-title {
@@ -152,16 +157,19 @@ section:nth-of-type(2) h2 {
 
 }
 
-/* fusion styles */
+/* estilos cartas de compra */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+.reducir{
+  width: 50%;
+}
 body{
   font-family: 'Roboto', sans-serif;
+  color: #0f1b2d;
 }
 img {
   width: 100%;
@@ -235,6 +243,7 @@ p {
   outline: none;
 }
 
+/* estilos ventana o carrito de compra emergente */
 .ventana-contenedor {
   position: fixed;
   top: 0;
@@ -316,4 +325,138 @@ p {
 }
 .boton-eliminar:focus {
   outline: none;
+}
+
+
+/* estilos formulario de contacto*/
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+.formulario{
+	height: 100%; 
+	font-family: 'Noto Sans', sans-serif;
+  background-color: #ab4493; 
+}
+
+
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button .formulario{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #ab4493; 
+	border-color: #ab4493; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p .formulario{
+	color: #fff; 
+}
+
+
+span .formulario{
+	color: #ab4493; 
+}
+
+
+.aviso .formulario{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+h1 .formulario{
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: #ab4493;
+}
+
+
+h3 .formulario{ 
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+p .formulario p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
 }
