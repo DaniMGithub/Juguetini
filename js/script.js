@@ -12,6 +12,11 @@ const cantidadTotal = document.getElementById('cantidadTotal')
 
 let carrito = []
 
+//promesa, async y await del archivo json (colocotodas las funciones aquí adentro para que funcionen)
+const getProductos = async()=>{
+    const response = await fetch("./json/data.json");
+    const data = await response.json();
+
 //CARRITO
 //AGREGAR AL CARRITO
 const agregarAlCarrito = (prodId) => {
@@ -26,7 +31,7 @@ const agregarAlCarrito = (prodId) => {
             }
         })
     } else { 
-        const item = stockProductos.find((prod) => prod.id === prodId)
+        const item = data.find((prod) => prod.id === prodId)
         carrito.push(item)
     }
 
@@ -34,7 +39,7 @@ const agregarAlCarrito = (prodId) => {
 }
 
 //creamos el div de cada producto
-stockProductos.forEach((producto) => {
+data.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
     div.innerHTML = `
@@ -57,16 +62,13 @@ stockProductos.forEach((producto) => {
 })
 
 
-
-
 // ELIMINAR DEL CARRITO
 const eliminarDelCarrito = (prodId) => {
-    const item = carrito.find((prod) => prod.id === prodId)
-
-    const indice = carrito.indexOf(item)
-    carrito.splice(indice, 1) 
-    actualizarCarrito() 
-    console.log(carrito)
+const item = carrito.find((prod) => prod.id === prodId)
+const indice = carrito.indexOf(item);
+carrito.splice(indice, 1); 
+actualizarCarrito(); 
+console.log(carrito);
 }
 
 //ACTUALIZAR CARRITO, va agregando productos
@@ -106,13 +108,19 @@ botonVaciar.addEventListener('click', () => {
     carrito.length = 0
     actualizarCarrito()
 })
+    };
+    
+    getProductos();
+
+
+    localStorage.setItem('carrito', JSON.stringify(carrito))
 
 /* Mail para el formulario de contacto realizado con emailjs.com */
 
 const btn = document.getElementById('button');
 
 document.getElementById('form')
- .addEventListener('submit', function(event) {
+ addEventListener('submit', function(event) {
    event.preventDefault();
 
    btn.value = 'Sending...';

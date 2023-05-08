@@ -18,3 +18,4 @@ contenedorVentana.addEventListener('click', (event) => {
 ventanaCarrito.addEventListener('click', (event) => {
     event.stopPropagation()
 }) 
+
