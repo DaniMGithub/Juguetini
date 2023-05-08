@@ -113,5 +113,17 @@ botonVaciar.addEventListener('click', () => {
     getProductos();
 
 
-    localStorage.setItem('carrito', JSON.stringify(carrito))
+
+    
+  // Agrega hover al div de cada producto
+  div.addEventListener('mouseenter', () => {
+    div.classList.add('hover');
+  });
+  
+    div.addEventListener('mouseleave', () => {
+    div.classList.remove('hover');
+  });
+  
+  contenedorProductos.appendChild(div);
+;
 
