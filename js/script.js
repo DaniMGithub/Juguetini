@@ -108,22 +108,24 @@ botonVaciar.addEventListener('click', () => {
     carrito.length = 0
     actualizarCarrito()
 })
+
+
+    
+  // Agrega hover al div de cada producto
+  producto.addEventListener('mouseenter', () => {
+    producto.classList.add('hover');
+  });
+  
+    producto.addEventListener('mouseleave', () => {
+    producto.classList.remove('hover');
+  });
+  
+  contenedorProductos.appendChild(div);
+;
     };
     
     getProductos();
 
 
 
-    
-  // Agrega hover al div de cada producto
-  div.addEventListener('mouseenter', () => {
-    div.classList.add('hover');
-  });
-  
-    div.addEventListener('mouseleave', () => {
-    div.classList.remove('hover');
-  });
-  
-  contenedorProductos.appendChild(div);
-;
 
