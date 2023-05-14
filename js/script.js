@@ -1,3 +1,4 @@
+
 const contenedorProductos = document.getElementById('contenedor-productos')
 
 const contenedorCarrito = document.getElementById('carrito-contenedor')
@@ -10,6 +11,8 @@ const cantidad = document.getElementById('cantidad')
 const precioTotal = document.getElementById('precioTotal')
 const cantidadTotal = document.getElementById('cantidadTotal')
 
+const showAlert = () => { Swal.fire('boton-agregar'); } 
+
 let carrito = []
 
 //promesa, async y await del archivo json (colocotodas las funciones aquí adentro para que funcionen)
@@ -21,7 +24,12 @@ const getProductos = async()=>{
 //AGREGAR AL CARRITO
 const agregarAlCarrito = (prodId) => {
 
-    const existe = carrito.some (prod => prod.id === prodId) //comprobar si el elemento ya existe en el carro
+    const existe = carrito.some (prod => prod.id === prodId)//comprobar si el elemento ya existe en el carro
+    Swal.fire(
+        'Producto agregado!',
+        'Has hecho click en el boton!',
+        'success'
+      )
 
     if (existe){ 
         const prod = carrito.map (prod => { 
@@ -37,6 +45,8 @@ const agregarAlCarrito = (prodId) => {
 
     actualizarCarrito() 
 }
+
+  
 
 //creamos el div de cada producto
 data.forEach((producto) => {
@@ -106,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 botonVaciar.addEventListener('click', () => {
     carrito.length = 0
-    actualizarCarrito()
+    actualizarCarrito() 
 })
 
 
@@ -125,7 +135,6 @@ botonVaciar.addEventListener('click', () => {
     };
     
     getProductos();
-
 
 
 
