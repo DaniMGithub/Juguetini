@@ -5,6 +5,8 @@ const contenedorCarrito = document.getElementById('carrito-contenedor')
 
 const botonVaciar = document.getElementById('vaciar-carrito')
 
+const botonFinal = document.getElementById('finalizar-carrito')
+
 const contadorCarrito = document.getElementById('contadorCarrito')
 
 const cantidad = document.getElementById('cantidad')
@@ -116,6 +118,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 botonVaciar.addEventListener('click', () => {
     carrito.length = 0
+    actualizarCarrito() 
+})
+
+botonFinal.addEventListener('click', () => {
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Gracias por elegir TIENDA JUGUETINI!',
+        showConfirmButton: false,
+        timer: 1500
+      })
     actualizarCarrito() 
 })
 
