@@ -7,6 +7,8 @@ const botonVaciar = document.getElementById('vaciar-carrito')
 
 const botonFinal = document.getElementById('finalizar-carrito')
 
+const eliminarDelCarrito = document.getElementById('botonEliminar');
+
 const contadorCarrito = document.getElementById('contadorCarrito')
 
 const cantidad = document.getElementById('cantidad')
@@ -74,7 +76,7 @@ data.forEach((producto) => {
 })
 
 
-// ELIMINAR DEL CARRITO
+//* ELIMINAR DEL CARRITO
 const eliminarDelCarrito = (prodId) => {
 const item = carrito.find((prod) => prod.id === prodId)
 const indice = carrito.indexOf(item);
@@ -121,6 +123,7 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito() 
 })
 
+
 botonFinal.addEventListener('click', () => {
     Swal.fire({
         position: 'top-end',
@@ -150,4 +153,10 @@ botonFinal.addEventListener('click', () => {
     getProductos();
 
 
-
+    try{
+        eliminarDelCarrito()
+    }catch (error){
+        console.log(error)
+    }finally{
+        console.log('todo ha terminado')
+    }
